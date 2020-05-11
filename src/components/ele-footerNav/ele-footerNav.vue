@@ -26,7 +26,7 @@
     </div>
     <div class="item">
       <router-link to="/Personal">
-        <i class="iconfont icon-sousuo"></i>
+        <i class="iconfont icon-bussiness-man"></i>
         <span class="text">个人</span>
       </router-link>
     </div>
@@ -44,25 +44,33 @@ export default {
     position fixed
     left 0
     bottom 0
+    display flex
+    flex-wrap row wrap
     width 100%
     height 98px
-    display flex
-    background pink
-    & >.item
-      flex 1
+    background-color #fff
+    &>.item
+      width 20%
       display flex
-      justify-content center
+      align-items center
       a
-        display flex
+        display inline-block
+        display flex  
         flex-direction column
+        align-items center
+        flex 1
         span 
           font-size .32rem
           display block
-          margin-top 20px
+          margin-top .09333rem
+          font-size .32rem
+          color #666
+          line-height 1
         i
-          width 40px
-          height 40px
+          width: .53333rem;
+          height: .53333rem
           font-size 40px
-          line-height 80px
+
+          
 
 </style>
